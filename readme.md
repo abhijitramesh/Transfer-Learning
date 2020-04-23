@@ -1,0 +1,3 @@
+# Transfer Learning
+
+If we take a look at CNNs it has many layers and are really good at understanding patterns in Images. There are CNNs like Alex Net, Res Net, VGG etc.. which are trained on Image Net dataset which consist of millions of images and thousands of class. What if we can use the knowledge that these images have and apply it to our dataset. Remember ResNet, VGG etc.. where trained on high end GPU's for weeks and hence they are really accurate. Yes we can use the knowlege that these datasets have to train with out own dataset to get a very good model this process is called transfer learning.
