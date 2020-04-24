@@ -12,3 +12,34 @@ If you have very good knowledge about CNNs you might be wondering how can we use
 
 Transfer learning is a very powerfull tool but depending upon the data that the network that it was trained with initaly and depending upon the dataset that we currently have we might have to decide which part of the model we have to customize and which part we need to freeze weights and train the model again or even we might have to retrain the whole model with a new dataset this process is called Fine tuning.
 
+Depending upon different cases we might have to follow different statery to do our tranfser learning
+
+_Case 1_ : The data we have is small but it is similat to that of which the inital dataset was trained.
+
+* Silce of the fully connected layers of the model at the end.
+* Create new fully connected layers that matches the number of classes that we want in out network.
+* randomize the weights for this new fully connected network and freeze the weights for the pre-trained network.
+* train the network and update the weights for the fully connected layers part.
+
+_Case 2_ : The new dataset is small but it is different from the once the model was intiallt trained on.
+
+* Silce of all the layers towards the begining of the network but preserving some of it.
+* Create new fully connected layers that matches the number of classes that we want in out network.
+* randomize the weights for the new fully connected network and freeze the weights for the pre-trained network.
+* train the network and update the weights for the new fully connected network.
+
+_Case 3_ : New dataset is large but similar to the once that the model was trained initally.
+
+* Slice of the fully connected layers to the end of the network.
+* Create new fully connected network that matches the number of classes that we want in out network.
+* randomize the weights for the fully connected network.
+* initialise the weights for the rest of the netowrk.
+* retrain the entire network.
+
+_Case 4_ : New dataset is large but different from the intial mode.
+
+* Slice of the end of the network.
+* Add new fully connected layers to the end of the network
+* Randomize the weights for the entire network and retrain the whole mode.
+
+*Alternatively* we can follow the same steps for _Case 3_
