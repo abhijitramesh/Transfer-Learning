@@ -6,3 +6,9 @@ If we take a look at CNNs it has many layers and are really good at understandin
 #### Useful layers
 
 If you have very good knowledge about CNNs you might be wondering how can we use data sets like VGG that is trained on Image Net to work with our dataset, well to begine with as we know a CNN concist of layers that are arranged in a hirarchy, it might contain convolutional and pooling layers, the first layer might be undertanding edges and shapes, the second might be looking for colors and so on. So these layers can be classified as feature extractors and they work for our usecase. We just have too customise the end layers of the network to work with our prediction for this we will remove the excisting one and implement our own which should work for us. One thing to note here is the success of our prediction depends upon how big our dataset is and how much similarity it shares with the imagenet dataset.
+
+
+#### Fine tuning
+
+Transfer learning is a very powerfull tool but depending upon the data that the network that it was trained with initaly and depending upon the dataset that we currently have we might have to decide which part of the model we have to customize and which part we need to freeze weights and train the model again or even we might have to retrain the whole model with a new dataset this process is called Fine tuning.
+
