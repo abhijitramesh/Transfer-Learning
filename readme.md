@@ -43,3 +43,5 @@ _Case 4_ : New dataset is large but different from the intial mode.
 * Randomize the weights for the entire network and retrain the whole mode.
 
 *Alternatively* we can follow the same steps for _Case 3_
+
+[Click here](https://github.com/abhijitramesh/Transfer-Learning/blob/master/Transfer_Learning_Exercise.ipynb) to find about transfer learning in flower dataset using VGG 16.
